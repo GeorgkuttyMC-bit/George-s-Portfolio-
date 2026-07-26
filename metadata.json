@@ -1,0 +1,8 @@
+{
+  "name": "Georgekutty MC Portfolio",
+  "description": "Interactive portfolio for Georgekutty MC, an AI-Skilled Graphic Designer",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
