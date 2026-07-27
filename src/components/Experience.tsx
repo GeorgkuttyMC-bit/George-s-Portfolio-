@@ -1,7 +1,14 @@
 import { motion } from "motion/react";
 import { experiences } from "../data";
+import { experiences_de } from "../i18n/data_de";
+import { useLanguage } from "../context/LanguageContext";
+import SectionVoiceover from "./SectionVoiceover";
 
 export default function Experience() {
+  const { t, language } = useLanguage();
+  
+  const currentExperiences = language === 'de' ? experiences_de : experiences;
+
   return (
     <section id="experience" className="py-24 bg-neutral-900 relative">
       <div className="container mx-auto px-6 lg:px-12">
@@ -11,14 +18,17 @@ export default function Experience() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Professional Journey</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 flex items-center justify-center gap-4">
+            {t('experience.title')}
+            <SectionVoiceover sectionId="experience" text={t('voiceover.experience') + " " + currentExperiences.map(e => e.role + " at " + e.company).join(". ")} />
+          </h2>
           <p className="text-neutral-400 max-w-2xl mx-auto text-lg">
-            A decade of delivering high-quality design solutions across global teams.
+            {t('experience.description')}
           </p>
         </motion.div>
 
         <div className="max-w-4xl mx-auto">
-          {experiences.map((exp, index) => (
+          {currentExperiences.map((exp, index) => (
             <motion.div
               key={exp.id}
               initial={{ opacity: 0, y: 30 }}
@@ -44,11 +54,14 @@ export default function Experience() {
 
                 {/* Content */}
                 <div className="md:col-span-7 md:pl-8 pt-1">
-                  <div className="md:hidden mb-2">
-                     <span className="text-sm font-semibold tracking-widest uppercase text-blue-400">{exp.date}</span>
+                  <div className="md:hidden mb-2"> 
+                    <span className="text-sm font-semibold tracking-widest uppercase text-blue-400">{exp.date}</span>
                   </div>
                   
-                  <h3 className="text-xl font-bold text-white mb-1">{exp.role}</h3>
+                  <h3 className="text-xl font-bold text-white mb-1 flex items-center gap-3">
+                    {exp.role}
+                    <SectionVoiceover sectionId={`exp-${exp.id}`} text={`${exp.role} at ${exp.company} from ${exp.date}. ` + exp.description.join(". ")} size="sm" />
+                  </h3>
                   <div className="text-neutral-400 font-medium mb-4">{exp.company} &bull; {exp.location}</div>
                   
                   <ul className="space-y-2">

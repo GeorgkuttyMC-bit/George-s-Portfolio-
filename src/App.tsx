@@ -11,17 +11,25 @@ import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
 import Certifications from "./components/Certifications";
 import Footer from "./components/Footer";
+import LanguageToggle from "./components/LanguageToggle";
+import { LanguageProvider } from "./context/LanguageContext";
+import { VoiceoverProvider } from "./context/VoiceoverContext";
 
 export default function App() {
   return (
-    <main className="bg-neutral-950 min-h-screen text-white font-sans selection:bg-blue-500/30">
-      <Hero />
-      <About />
-      <Skills />
-      <Experience />
-      <Certifications />
-      <Portfolio />
-      <Footer />
-    </main>
+    <LanguageProvider>
+      <VoiceoverProvider>
+        <main className="bg-neutral-950 min-h-screen text-white font-sans selection:bg-blue-500/30">
+          <LanguageToggle />
+          <Hero />
+          <About />
+          <Skills />
+          <Experience />
+          <Certifications />
+          <Portfolio />
+          <Footer />
+        </main>
+      </VoiceoverProvider>
+    </LanguageProvider>
   );
 }

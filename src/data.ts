@@ -94,43 +94,71 @@ export const experiences = [
       "Assess and evaluate existing presentations and implement and recommend improvements"
     ],
   },
-  {
-    id: 6,
-    role: "Trainer & Administrator",
-    company: "CYBERTEC",
-    location: "Kochi, India",
-    date: "05/05/2010 – 08/05/2013",
-    description: [
-      "Evaluate employee performance to gauge where skills are lacking.",
-      "Create training programs to address skill gaps in employees.",
-      "Prepare learning materials for programs.",
-      "Develop onboarding programs for new employees.",
-      "Conduct surveys to gauge the effectiveness of programs."
-    ],
-  },
 ];
 
 export const portfolioWorks = [
   {
     id: 1,
-    title: "NEXT TECHNOLOGYS",
-    type: "Brand Identity & Design",
-    link: "https://www.behance.net/gallery/98981099/NEXT-TECHNOLOGYS",
-    image: "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1000&auto=format&fit=crop", // placeholder abstract tech
+    title: "Rahesh and his Cat (Cartoon Series)",
+    type: "Cartoon Series",
+    link: "https://www.behance.net/gallery/253314217/Rahesh-and-his-Cat-(Cartoon-Series)",
+    image: "https://mir-s3-cdn-cf.behance.net/projects/808/ded848253314217.6a660b49b764a.png",
   },
   {
     id: 2,
-    title: "Scalene HR Works",
-    type: "Corporate Graphics",
-    link: "https://www.behance.net/gallery/162725255/Scalene-HR-works",
-    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1000&auto=format&fit=crop", // placeholder corporate
+    title: "Master Mind Partner's - Comic Series",
+    type: "Comic Series",
+    link: "https://www.behance.net/gallery/252174937/Master-Mind-Partners-Comic-Series",
+    image: "https://mir-s3-cdn-cf.behance.net/projects/808/bc48fa252174937.6a48b48e8caa2.png",
   },
   {
     id: 3,
-    title: "Infographics Showcase",
-    type: "Data Visualization",
-    link: "https://www.behance.net/gallery/126052749/infographics",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop", // placeholder data
+    title: "The Legend Of Bhramadattan",
+    type: "Illustration",
+    link: "https://www.behance.net/gallery/245037685/The-Lgend-Of-Bhramadattan",
+    image: "https://mir-s3-cdn-cf.behance.net/projects/808/99a029245037685.Y3JvcCw5ODEsNzY4LDE5Niww.jpg",
+  },
+  {
+    id: 4,
+    title: "History of German Language - Infographics",
+    type: "Infographics",
+    link: "https://www.behance.net/gallery/243044711/History-of-German-Language-Infographics",
+    image: "https://mir-s3-cdn-cf.behance.net/projects/808/f0eea3243044711.6979a21d0e5f4.png",
+  },
+  {
+    id: 5,
+    title: "The History of Germany Presentation",
+    type: "Presentation",
+    link: "https://www.behance.net/gallery/242805083/The-History-of-Germany-Presentation",
+    image: "https://mir-s3-cdn-cf.behance.net/projects/808/1005b8242805083.6974564b5a015.png",
+  },
+  {
+    id: 6,
+    title: "D7 Networks ChatBoat Animation",
+    type: "Animation",
+    link: "https://www.behance.net/gallery/240469397/D7-Networks-ChatBoat-Animation",
+    image: "https://mir-s3-cdn-cf.behance.net/projects/808/66709b280869397.Y3JvcCw5MjAsNzIwLDM0LDA.jpg",
+  },
+  {
+    id: 7,
+    title: "Malayalam Story Book - History of Travancore",
+    type: "Story Book",
+    link: "https://www.behance.net/gallery/235911285/Malayalam-Story-Book-History-of-Travancore",
+    image: "https://mir-s3-cdn-cf.behance.net/projects/808/1b727e235911285.Y3JvcCwxMDc5LDg0MywwLDQ4Mw.jpg",
+  },
+  {
+    id: 8,
+    title: "Story book Design - The Word Wars",
+    type: "Story Book",
+    link: "https://www.behance.net/gallery/235907345/Story-book-Design-The-Word-Wars",
+    image: "https://mir-s3-cdn-cf.behance.net/projects/808/b0118d235907345.Y3JvcCwxMDY4LDgzNSwwLDQ2Nw.jpg",
+  },
+  {
+    id: 9,
+    title: "Product Launch - Kakkooran Butter Chicken",
+    type: "Product Launch",
+    link: "https://www.behance.net/gallery/235767011/Product-Launch-Kakkooran-Butter-Chicken",
+    image: "https://mir-s3-cdn-cf.behance.net/projects/808/239626235767011.68ddfd93aa26b.png",
   }
 ];
 
@@ -142,16 +170,16 @@ export const skills = [
 ];
 
 export const certifications = [
-  { id: "7452368765905969152", title: "AI Career Empowerment & Professional Growth" },
-  { id: "7402581772179337216", title: "Professional Certification Update" },
-  { id: "7363089206518190080", title: "Professional Certification Update" },
-  { id: "7297824975061757953", title: "AI, ML & Deep Learning" },
-  { id: "7252220348362825728", title: "Robotics and AI Course Completion" },
-  { id: "7201605214569709569", title: "Professional Certification Update" },
-  { id: "7183433888868827136", title: "Certificate of Completion" },
-  { id: "7168183042644099074", title: "Adobe Creative Cloud - Augmented Reality" },
-  { id: "7163038683367915520", title: "Adobe Express & Adobe Firefly" },
-  { id: "6845641594125848576", title: "Introduction to Graphic Design" }
+  { id: "7452368765905969152", title: "AI and Career Empowerment" },
+  { id: "7402581772179337216", title: "Methods of AI I – Intelligent Agents" },
+  { id: "7363089206518190080", title: "Introduction to AI and Entrepreneurship" },
+  { id: "7297824975061757953", title: "AI Essentials: A Comprehensive Introduction" },
+  { id: "7252220348362825728", title: "Robotics and AI" },
+  { id: "7201605214569709569", title: "Introduction to Generative AI Studio" },
+  { id: "7183433888868827136", title: "Generative AI: The Evolution of Thoughtful Online Search" },
+  { id: "7168183042644099074", title: "Augment Reality in the Classroom" },
+  { id: "7163038683367915520", title: "Generative AI in the Classroom" },
+  { id: "6845641594125848576", title: "Introduction to Graphic Design - Dimension" }
 ];
 
 export const aiTools = [

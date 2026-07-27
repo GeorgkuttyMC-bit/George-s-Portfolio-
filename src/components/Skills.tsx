@@ -2,6 +2,8 @@ import { motion } from "motion/react";
 import { skills, certifications, aiTools } from "../data";
 import { CheckCircle2, Award, Sparkles } from "lucide-react";
 import { useState } from "react";
+import { useLanguage } from "../context/LanguageContext";
+import SectionVoiceover from "./SectionVoiceover";
 
 function ToolLogo({ name, domain }: { name: string; domain: string }) {
   const [error, setError] = useState(false);
@@ -25,6 +27,11 @@ function ToolLogo({ name, domain }: { name: string; domain: string }) {
 }
 
 export default function Skills() {
+  const { t } = useLanguage();
+
+  const coreSkillsText = t('skills.coreSkills') + ". " + skills.join(", ") + ".";
+  const aiToolsText = t('skills.aiTools') + ". " + aiTools.map(tool => tool.name).join(", ") + ".";
+
   return (
     <section id="skills" className="py-24 bg-neutral-900">
       <div className="container mx-auto px-6 lg:px-12">
@@ -40,7 +47,10 @@ export default function Skills() {
               <div className="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center">
                 <CheckCircle2 className="w-6 h-6 text-blue-400" />
               </div>
-              <h2 className="text-3xl font-bold text-white">Technical Skills</h2>
+              <h2 className="text-3xl font-bold text-white flex items-center gap-4">
+                {t('skills.coreSkills')}
+                <SectionVoiceover sectionId="coreSkills" text={coreSkillsText} size="sm" />
+              </h2>
             </div>
             
             <div className="flex flex-wrap gap-3">
@@ -62,7 +72,10 @@ export default function Skills() {
               <div className="w-12 h-12 rounded-xl bg-pink-500/10 flex items-center justify-center">
                 <Sparkles className="w-6 h-6 text-pink-400" />
               </div>
-              <h2 className="text-3xl font-bold text-white">AI Generative Tools</h2>
+              <h2 className="text-3xl font-bold text-white flex items-center gap-4">
+                {t('skills.aiTools')}
+                <SectionVoiceover sectionId="aiTools" text={aiToolsText} size="sm" />
+              </h2>
             </div>
             
             <div className="flex flex-wrap gap-3">
@@ -80,8 +93,8 @@ export default function Skills() {
                 </motion.div>
               ))}
             </div>
-          </motion.div>
 
+          </motion.div>
         </div>
       </div>
     </section>

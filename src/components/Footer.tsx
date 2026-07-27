@@ -1,8 +1,11 @@
 import { motion } from "motion/react";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { personalInfo } from "../data";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Footer() {
+  const { t } = useLanguage();
+
   return (
     <footer className="bg-neutral-950 py-16 border-t border-white/10 relative overflow-hidden">
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03] pointer-events-none" />
@@ -12,8 +15,8 @@ export default function Footer() {
           
           <div className="lg:col-span-2">
             <h2 className="text-2xl font-black text-white mb-4">
-              Let's create something<br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">extraordinary.</span>
+              {t('about.contact').split(' ')[0]} {t('about.contact').split(' ')[1] && <br/>}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">{t('about.contact').split(' ').slice(2).join(' ')}</span>
             </h2>
             <p className="text-neutral-500 max-w-sm mb-8">
               Available for new opportunities and exciting design collaborations.
@@ -63,18 +66,18 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-6">Navigation</h3>
             <ul className="space-y-3 text-sm">
-              <li><a href="#about" className="text-neutral-500 hover:text-white transition-colors">About</a></li>
-              <li><a href="#skills" className="text-neutral-500 hover:text-white transition-colors">Skills</a></li>
-              <li><a href="#experience" className="text-neutral-500 hover:text-white transition-colors">Experience</a></li>
-              <li><a href="#certifications" className="text-neutral-500 hover:text-white transition-colors">Certifications</a></li>
-              <li><a href="#portfolio" className="text-neutral-500 hover:text-white transition-colors">Portfolio</a></li>
+              <li><a href="#about" className="text-neutral-500 hover:text-white transition-colors">{t('nav.about')}</a></li>
+              <li><a href="#skills" className="text-neutral-500 hover:text-white transition-colors">{t('nav.skills')}</a></li>
+              <li><a href="#experience" className="text-neutral-500 hover:text-white transition-colors">{t('nav.experience')}</a></li>
+              <li><a href="#certifications" className="text-neutral-500 hover:text-white transition-colors">{t('nav.certifications')}</a></li>
+              <li><a href="#portfolio" className="text-neutral-500 hover:text-white transition-colors">{t('nav.portfolio')}</a></li>
             </ul>
           </div>
-          
+        
         </div>
         
         <div className="mt-16 pt-8 border-t border-white/10 text-center text-neutral-600 text-sm flex flex-col md:flex-row justify-between items-center">
-          <p>&copy; {new Date().getFullYear()} Georgekutty MC. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Georgekutty MC. {t('footer.rights')}</p>
           <p className="mt-2 md:mt-0">Designed & Developed as an AI-powered interactive portfolio.</p>
         </div>
       </div>

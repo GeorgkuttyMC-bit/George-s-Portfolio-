@@ -1,16 +1,19 @@
 import { motion } from "motion/react";
 import { personalInfo } from "../data";
 import { Sparkles, Palette, Layers, FileImage } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
+import SectionVoiceover from "./SectionVoiceover";
 
 const orbitingCompanies = [
   { name: "Hubbell", years: "3+ yrs", color: "from-blue-500 to-blue-700", shadow: "shadow-blue-500/50" },
   { name: "Sprinklr", years: "7 mos", color: "from-emerald-500 to-emerald-700", shadow: "shadow-emerald-500/50" },
   { name: "Provise", years: "2.5 yrs", color: "from-purple-500 to-purple-700", shadow: "shadow-purple-500/50" },
   { name: "Williams Lea", years: "4 yrs", color: "from-pink-500 to-pink-700", shadow: "shadow-pink-500/50" },
-  { name: "Cybertec", years: "3 yrs", color: "from-cyan-500 to-cyan-700", shadow: "shadow-cyan-500/50" }
 ];
 
 export default function About() {
+  const { t } = useLanguage();
+
   const highlights = [
     {
       icon: <Sparkles className="w-6 h-6 text-purple-400" />,
@@ -34,6 +37,8 @@ export default function About() {
     }
   ];
 
+  const aboutText = t('voiceover.about') + ". " + highlights.map(h => h.title + ". " + h.description).join(" ");
+
   return (
     <section id="about" className="py-24 bg-neutral-950 relative">
       <div className="container mx-auto px-6 lg:px-12">
@@ -45,11 +50,12 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="lg:w-1/2"
           >
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              Crafting <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Visual Stories</span>
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 flex items-center gap-4">
+              {t('about.title')}
+              <SectionVoiceover sectionId="about" text={aboutText} />
             </h2>
             <p className="text-neutral-400 text-lg leading-relaxed mb-8">
-              {personalInfo.about}
+              {t('about.description')}
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -104,7 +110,7 @@ export default function About() {
               >
                 <div className="text-center">
                   <div className="text-3xl font-bold text-white">10+</div>
-                  <div className="text-xs text-neutral-400 uppercase tracking-wider mt-1">Years<br/>Exp</div>
+                  <div className="text-xs text-neutral-400 uppercase tracking-wider mt-1">{t('about.stats.experience').split(' ')[0]}<br/>{t('about.stats.experience').split(' ')[1]}</div>
                 </div>
               </motion.div>
               
@@ -116,16 +122,14 @@ export default function About() {
                   const rad = (angle - 90) * (Math.PI / 180);
                   const top = 50 + radius * Math.sin(rad) + "%";
                   const left = 50 + radius * Math.cos(rad) + "%";
-
                   return (
                     <div 
                       key={company.name}
-                      className="absolute animate-spin-slow-reverse flex flex-col items-center justify-center text-center -ml-7 -mt-7 md:-ml-8 md:-mt-8"
+                      className="absolute animate-spin-slow-reverse flex flex-col items-center justify-center text-center"
                       style={{ top, left }}
                     >
                       <div className={`w-14 h-14 md:w-16 md:h-16 rounded-full bg-gradient-to-br ${company.color} shadow-lg ${company.shadow} flex flex-col items-center justify-center border border-white/20 backdrop-blur-md relative overflow-hidden group pointer-events-auto shadow-[inset_0_-4px_8px_rgba(0,0,0,0.5),inset_0_2px_4px_rgba(255,255,255,0.4)]`}>
                         <span className="text-[9px] md:text-[10px] font-bold text-white relative z-10 drop-shadow-md px-1 text-center leading-tight">{company.name}</span>
-                        <span className="text-[7px] md:text-[9px] font-semibold text-white/90 relative z-10 drop-shadow-md">{company.years}</span>
                       </div>
                     </div>
                   );

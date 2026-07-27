@@ -1,8 +1,12 @@
 import { motion } from "motion/react";
 import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
 import { personalInfo } from "../data";
+import { useLanguage } from "../context/LanguageContext";
+import SectionVoiceover from "./SectionVoiceover";
 
 export default function Hero() {
+  const { t } = useLanguage();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-neutral-950 text-white">
       {/* Background abstract elements */}
@@ -42,18 +46,17 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="inline-block mb-4 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm text-sm font-medium tracking-wide text-neutral-300"
         >
-          {personalInfo.role}
+          {t('hero.role')}
         </motion.div>
         
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-500"
+          className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-500 flex items-center justify-center gap-4 flex-wrap"
         >
-          Georgekutty
-          <br />
-          M.C.
+          <span>Georgekutty<br className="hidden md:block" /> M.C.</span>
+          <SectionVoiceover sectionId="intro" text={t('voiceover.intro')} size="md" className="mt-2 md:mt-0" />
         </motion.h1>
 
         <motion.p
@@ -62,7 +65,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           className="max-w-2xl text-lg md:text-xl text-neutral-400 mb-10"
         >
-          Transforming ideas into visually stunning realities with over 10 years of expertise, supercharged by Generative AI and Augmented Reality.
+          {t('hero.description')}
         </motion.p>
 
         <motion.div
@@ -75,7 +78,7 @@ export default function Hero() {
             href="#portfolio"
             className="group flex items-center gap-2 px-8 py-4 bg-white text-black font-semibold rounded-full hover:scale-105 transition-transform"
           >
-            View My Work
+            {t('hero.viewWork')}
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </a>
           <div className="flex gap-4">
@@ -111,7 +114,7 @@ export default function Hero() {
         transition={{ duration: 1, delay: 1 }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-neutral-500"
       >
-        <span className="text-xs uppercase tracking-widest">Scroll</span>
+        <span className="text-xs uppercase tracking-widest">{t('hero.scroll')}</span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
