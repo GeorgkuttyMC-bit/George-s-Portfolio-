@@ -7,6 +7,7 @@ export const personalInfo = {
   location: "Kochi, India",
   linkedin: "https://www.linkedin.com/in/georgekutty-m-c-16886193/",
   behance: "https://www.behance.net/Georgecreativelab",
+  youtube: "https://youtube.com/@georgescreativestudio",
   about: "Senior graphic design specialist with more than 10 years of experience in managing graphic design projects from inception to execution. Certified in Adobe AI Software like Adobe Firefly & Adobe Aero (Augmented Reality). Extensive experience in managing other designers and teams, with a deep understanding of Adobe Creative Suite, Infographic Design, and Generative AI workflows.",
 };
 
@@ -199,4 +200,105 @@ export const aiTools = [
   { name: "ComfyUI", domain: "comfyanonymous.github.io" },
   { name: "Magnific AI", domain: "magnific.ai" },
   { name: "Topaz Photo AI and Video AI", domain: "topazlabs.com" },
+];
+
+export const youtubeShorts = [
+  {
+    id: 1,
+    title: "Yakshiyum Yakshanum",
+    videoId: "9q7P6gd7-a0"
+  },
+  {
+    id: 2,
+    title: "The Celestial Shift",
+    videoId: "_7D7yuo0WU8"
+  },
+  {
+    id: 3,
+    title: "Bible Solutions",
+    videoId: "3O2uie3VlKg"
+  },
+  {
+    id: 4,
+    title: "Made in India",
+    videoId: "S9dUuD80jkk"
+  },
+  {
+    id: 5,
+    title: "Bheem",
+    videoId: "XQj5HWHL8sU"
+  },
+  {
+    id: 6,
+    title: "Bheema",
+    videoId: "S6_LiYTkXKI"
+  },
+  {
+    id: 7,
+    title: "Vikings the Unknown Truth",
+    videoId: "xThK2rzUmDM"
+  },
+  {
+    id: 8,
+    title: "Full Aadu Fry",
+    videoId: "eofkjhEfjmw"
+  },
+  {
+    id: 9,
+    title: "The Barefoot Juggler",
+    videoId: "SOeQtvsspo8"
+  },
+  {
+    id: 10,
+    title: "Malabar Chicken Biryani",
+    videoId: "9VJ21Qp-jrM"
+  },
+  {
+    id: 11,
+    title: "Onam Special",
+    videoId: "WJ_xI-RL--4"
+  },
+  {
+    id: 12,
+    title: "Game of Thrones",
+    videoId: "91y98I9huQk"
+  },
+  {
+    id: 13,
+    title: "Money Heist: Master Mind Partner's",
+    videoId: "X1WoVKUUhgA"
+  },
+  {
+    id: 14,
+    title: "Mahabharata",
+    videoId: "18En7p8ZOFk"
+  }
+];
+
+export const youtubeVideos = [
+  {
+    id: 1,
+    title: "George's Creative Studio - Video 1",
+    videoId: "dQw4w9WgXcQ"
+  },
+  {
+    id: 2,
+    title: "George's Creative Studio - Video 2",
+    videoId: "dQw4w9WgXcQ"
+  },
+  {
+    id: 3,
+    title: "George's Creative Studio - Video 3",
+    videoId: "dQw4w9WgXcQ"
+  },
+  {
+    id: 4,
+    title: "George's Creative Studio - Video 4",
+    videoId: "dQw4w9WgXcQ"
+  },
+  {
+    id: 5,
+    title: "George's Creative Studio - Video 5",
+    videoId: "dQw4w9WgXcQ"
+  }
 ];

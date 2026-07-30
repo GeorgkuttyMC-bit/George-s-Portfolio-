@@ -54,6 +54,12 @@ export const translations = {
       description: 'A showcase of my recent design projects and brand identity creations.',
       viewAll: 'View Full Behance Portfolio'
     },
+    youtube: {
+      title: 'YouTube Videos',
+      subtitle: 'My Channel',
+      description: 'Check out my latest video tutorials and creative processes on YouTube.',
+      viewAll: 'Visit YouTube Channel'
+    },
     footer: {
       rights: 'All rights reserved.'
     },
@@ -62,7 +68,8 @@ export const translations = {
       about: "About me. I am a highly creative and multitalented Senior Graphic Designer with more than 10 years of experience in managing graphic design projects from inception to execution.",
       skills: "My skills. I have a comprehensive toolkit combining traditional graphic design mastery with cutting-edge Generative AI capabilities. My arsenal includes Adobe Firefly, Midjourney, Adobe Creative Suite, and more.",
       experience: "My experience. A decade of delivering excellence across global brands and creative agencies.",
-      portfolio: "My portfolio. Here is a showcase of my recent design projects and brand identity creations."
+      portfolio: "My portfolio. Here is a showcase of my recent design projects and brand identity creations.",
+      youtube: "My YouTube channel. Watch my latest videos and tutorials on graphic design and AI."
     }
   },
   de: {
@@ -118,6 +125,12 @@ export const translations = {
       description: 'Ein Schaufenster meiner aktuellen Designprojekte und Markenidentitätskreationen.',
       viewAll: 'Vollständiges Behance-Portfolio ansehen'
     },
+    youtube: {
+      title: 'YouTube Videos',
+      subtitle: 'Mein Kanal',
+      description: 'Schauen Sie sich meine neuesten Video-Tutorials und kreativen Prozesse auf YouTube an.',
+      viewAll: 'YouTube-Kanal besuchen'
+    },
     footer: {
       rights: 'Alle Rechte vorbehalten.'
     },
@@ -126,7 +139,8 @@ export const translations = {
       about: "Über mich. Ich bin ein hochkreativer und vielseitiger Senior Grafikdesigner mit mehr als 10 Jahren Erfahrung in der Leitung von Grafikdesignprojekten von der Konzeption bis zur Ausführung.",
       skills: "Meine Fähigkeiten. Ein umfassendes Toolkit, das traditionelle Grafikdesign-Meisterschaft mit modernsten generativen KI-Fähigkeiten kombiniert. Mein Arsenal umfasst Adobe Firefly, Midjourney, Adobe Creative Suite und mehr.",
       experience: "Meine Erfahrung. Ein Jahrzehnt der Exzellenz bei globalen Marken und Kreativagenturen.",
-      portfolio: "Mein Portfolio. Hier ist ein Schaufenster meiner aktuellen Designprojekte und Markenidentitätskreationen."
+      portfolio: "Mein Portfolio. Hier ist ein Schaufenster meiner aktuellen Designprojekte und Markenidentitätskreationen.",
+      youtube: "Mein YouTube-Kanal. Sehen Sie sich meine neuesten Videos und Tutorials zu Grafikdesign und KI an."
     }
   }
 };

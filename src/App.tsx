@@ -8,6 +8,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Portfolio from "./components/Portfolio";
+import YoutubeVideos from "./components/YoutubeVideos";
 import Skills from "./components/Skills";
 import Certifications from "./components/Certifications";
 import Footer from "./components/Footer";
@@ -27,6 +28,7 @@ export default function App() {
           <Experience />
           <Certifications />
           <Portfolio />
+          <YoutubeVideos />
           <Footer />
         </main>
       </VoiceoverProvider>
