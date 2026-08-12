@@ -216,8 +216,8 @@ export const aiTools = [
 export const youtubeShorts = [
   {
     id: 1,
-    title: "Yakshiyum Yakshanum",
-    videoId: "9q7P6gd7-a0"
+    title: "Dune 3 Movie Trailer",
+    videoId: "riJPuyovn-0"
   },
   {
     id: 2,
@@ -226,63 +226,58 @@ export const youtubeShorts = [
   },
   {
     id: 3,
-    title: "Bible Solutions",
-    videoId: "3O2uie3VlKg"
+    title: "XYLAR",
+    videoId: "fMzVFnTAG9c"
   },
   {
     id: 4,
-    title: "Made in India",
-    videoId: "S9dUuD80jkk"
+    title: "Ritual of Redemption",
+    videoId: "dBcqk3GNSEs"
   },
   {
     id: 5,
-    title: "Bheem",
-    videoId: "XQj5HWHL8sU"
+    title: "The Martian Pulse",
+    videoId: "NfUkK3eQZYY"
   },
   {
     id: 6,
-    title: "Bheema",
-    videoId: "S6_LiYTkXKI"
+    title: "THE RECKONING",
+    videoId: "jXDnCo2GXXE"
   },
   {
     id: 7,
-    title: "Vikings the Unknown Truth",
-    videoId: "xThK2rzUmDM"
+    title: "Mahabharata",
+    videoId: "18En7p8ZOFk"
   },
   {
     id: 8,
-    title: "Full Aadu Fry",
-    videoId: "eofkjhEfjmw"
+    title: "Samoothiri 1",
+    videoId: "O1Pn_sW7RHI"
   },
   {
     id: 9,
-    title: "The Barefoot Juggler",
-    videoId: "SOeQtvsspo8"
+    title: "Jack's Stand",
+    videoId: "FMuBnj2C-3Y"
   },
   {
     id: 10,
-    title: "Malabar Chicken Biryani",
-    videoId: "9VJ21Qp-jrM"
+    title: "Bhramadattan Namboothiripadu",
+    videoId: "1H3lhSo2cko"
   },
   {
     id: 11,
-    title: "Onam Special",
-    videoId: "WJ_xI-RL--4"
+    title: "Saga of a Great Tantrik",
+    videoId: "LdnsecTwZkM"
   },
   {
     id: 12,
-    title: "Game of Thrones",
-    videoId: "91y98I9huQk"
+    title: "Bhramayugam Prequel",
+    videoId: "ZmHaWGHaock"
   },
   {
     id: 13,
-    title: "Money Heist: Master Mind Partner's",
-    videoId: "X1WoVKUUhgA"
-  },
-  {
-    id: 14,
-    title: "Mahabharata",
-    videoId: "18En7p8ZOFk"
+    title: "The World Of Ramayana",
+    videoId: "WYOQ5JjPIHI"
   }
 ];
 

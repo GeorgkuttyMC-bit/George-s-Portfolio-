@@ -68,10 +68,24 @@ export const VoiceoverProvider: React.FC<{ children: ReactNode }> = ({ children 
       
       const voices = synthRef.current?.getVoices() || [];
       if (voices.length > 0) {
-        const langPrefix = language === 'de' ? 'de' : 'en';
-        const voice = voices.find(v => v.lang.startsWith(langPrefix)) || voices[0];
-        if (voice) {
-          utterance.voice = voice;
+        if (language === 'de') {
+          const deVoices = voices.filter(v => v.lang.startsWith('de'));
+          const maleNames = ['markus', 'viktor', 'yannick', 'stefan', 'conrad', 'killian', 'male'];
+          const voice = deVoices.find(v => maleNames.some(name => v.name.toLowerCase().includes(name))) 
+            || deVoices.find(v => !v.name.toLowerCase().includes('female') && !v.name.toLowerCase().includes('anna') && !v.name.toLowerCase().includes('hedda') && !v.name.toLowerCase().includes('katja') && !v.name.toLowerCase().includes('marlene'))
+            || deVoices[0] 
+            || voices[0];
+            
+          if (voice) {
+            utterance.voice = voice;
+            utterance.pitch = 0.8; // Lower pitch for a bolder sound
+            utterance.rate = 0.9;  // Slightly slower for emphasis
+          }
+        } else {
+          const voice = voices.find(v => v.lang.startsWith('en')) || voices[0];
+          if (voice) {
+            utterance.voice = voice;
+          }
         }
       }
       
