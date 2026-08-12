@@ -210,6 +210,7 @@ export const aiTools = [
   { name: "ComfyUI", domain: "comfyanonymous.github.io" },
   { name: "Magnific AI", domain: "magnific.ai" },
   { name: "Topaz Photo AI and Video AI", domain: "topazlabs.com" },
+  { name: "Google Flow", domain: "google.com" },
 ];
 
 export const youtubeShorts = [
