@@ -170,6 +170,16 @@ export const skills = [
   "Microsoft PowerPoint", "Microsoft Word", "Microsoft Excel"
 ];
 
+export const education = [
+  {
+    id: 1,
+    degree: "BSc Electronics",
+    institution: "MG University",
+    date: "2007 – 2010",
+    description: "Completed Bachelor of Science in Electronics."
+  }
+];
+
 export const certifications = [
   { id: "7452368765905969152", title: "AI and Career Empowerment" },
   { id: "7402581772179337216", title: "Methods of AI I – Intelligent Agents" },

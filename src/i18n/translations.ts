@@ -43,6 +43,10 @@ export const translations = {
       description: 'A decade of delivering excellence across global brands and creative agencies.',
       present: 'Present'
     },
+    education: {
+      title: 'Education',
+      description: 'My academic background and qualifications.'
+    },
     certifications: {
       title: 'Certifications',
       subtitle: 'Continuous Learning',
@@ -68,6 +72,7 @@ export const translations = {
       about: "About me. I am a highly creative and multitalented Senior Graphic Designer with more than 10 years of experience in managing graphic design projects from inception to execution.",
       skills: "My skills. I have a comprehensive toolkit combining traditional graphic design mastery with cutting-edge Generative AI capabilities. My arsenal includes Adobe Firefly, Midjourney, Adobe Creative Suite, and more.",
       experience: "My experience. A decade of delivering excellence across global brands and creative agencies.",
+      education: "My education. My academic background and qualifications.",
       portfolio: "My portfolio. Here is a showcase of my recent design projects and brand identity creations.",
       youtube: "My YouTube channel. Watch my latest videos and tutorials on graphic design and AI."
     }
@@ -114,6 +119,10 @@ export const translations = {
       description: 'Ein Jahrzehnt der Exzellenz bei globalen Marken und Kreativagenturen.',
       present: 'Heute'
     },
+    education: {
+      title: 'Bildung',
+      description: 'Mein akademischer Hintergrund und Qualifikationen.'
+    },
     certifications: {
       title: 'Zertifizierungen',
       subtitle: 'Kontinuierliches Lernen',
@@ -139,6 +148,7 @@ export const translations = {
       about: "Über mich. Ich bin ein hochkreativer und vielseitiger Senior Grafikdesigner mit mehr als 10 Jahren Erfahrung in der Leitung von Grafikdesignprojekten von der Konzeption bis zur Ausführung.",
       skills: "Meine Fähigkeiten. Ein umfassendes Toolkit, das traditionelle Grafikdesign-Meisterschaft mit modernsten generativen KI-Fähigkeiten kombiniert. Mein Arsenal umfasst Adobe Firefly, Midjourney, Adobe Creative Suite und mehr.",
       experience: "Meine Erfahrung. Ein Jahrzehnt der Exzellenz bei globalen Marken und Kreativagenturen.",
+      education: "Meine Bildung. Mein akademischer Hintergrund und Qualifikationen.",
       portfolio: "Mein Portfolio. Hier ist ein Schaufenster meiner aktuellen Designprojekte und Markenidentitätskreationen.",
       youtube: "Mein YouTube-Kanal. Sehen Sie sich meine neuesten Videos und Tutorials zu Grafikdesign und KI an."
     }

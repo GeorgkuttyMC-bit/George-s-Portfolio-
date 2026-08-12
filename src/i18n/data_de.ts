@@ -149,6 +149,16 @@ export const portfolioWorks_de = [
   },
 ];
 
+export const education_de = [
+  {
+    id: 1,
+    degree: "BSc Elektronik",
+    institution: "MG University",
+    date: "2007 – 2010",
+    description: "Abschluss Bachelor of Science in Elektronik."
+  }
+];
+
 export const certifications_de = [
   { id: "7452368765905969152", title: "KI und Karriereförderung" },
   { id: "7402581772179337216", title: "Methoden der KI I – Intelligente Agenten" },
