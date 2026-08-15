@@ -9,6 +9,7 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Portfolio from "./components/Portfolio";
+import AIPoweredWebApps from "./components/AIPoweredWebApps";
 import YoutubeVideos from "./components/YoutubeVideos";
 import Skills from "./components/Skills";
 import Certifications from "./components/Certifications";
@@ -30,6 +31,7 @@ export default function App() {
           <Education />
           <Certifications />
           <Portfolio />
+          <AIPoweredWebApps />
           <YoutubeVideos />
           <Footer />
         </main>
