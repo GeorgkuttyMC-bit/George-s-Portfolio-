@@ -61,7 +61,7 @@ export const translations = {
     youtube: {
       title: 'YouTube Videos',
       subtitle: 'My Channel',
-      description: 'Check out my latest video tutorials and creative processes on YouTube.',
+      description: 'These are the micro-films that I have created using artificial intelligence.',
       viewAll: 'Visit YouTube Channel'
     },
     footer: {
@@ -137,7 +137,7 @@ export const translations = {
     youtube: {
       title: 'YouTube Videos',
       subtitle: 'Mein Kanal',
-      description: 'Schauen Sie sich meine neuesten Video-Tutorials und kreativen Prozesse auf YouTube an.',
+      description: 'Dies sind die Mikrofilme, die ich mithilfe künstlicher Intelligenz erstellt habe.',
       viewAll: 'YouTube-Kanal besuchen'
     },
     footer: {
