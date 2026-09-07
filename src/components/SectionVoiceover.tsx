@@ -21,7 +21,7 @@ export default function SectionVoiceover({ sectionId, text, className = '', size
   return (
     <button 
       onClick={(e) => { e.preventDefault(); e.stopPropagation(); toggleVoiceover(sectionId, text); }}
-      className={`inline-flex items-center justify-center rounded-full transition-colors ${isActive ? 'bg-purple-500 text-white' : 'bg-neutral-800 text-neutral-400 hover:bg-neutral-700 hover:text-white'} ${sizeClasses} ${className}`}
+      className={`inline-flex items-center justify-center rounded-full transition-colors print:hidden ${isActive ? 'bg-purple-500 text-white' : 'bg-neutral-800 text-neutral-400 hover:bg-neutral-700 hover:text-white'} ${sizeClasses} ${className}`}
       title={isActive ? "Stop voiceover" : "Play voiceover"}
       aria-label={isActive ? "Stop voiceover" : "Play voiceover"}
     >

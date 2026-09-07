@@ -15,6 +15,7 @@ import Skills from "./components/Skills";
 import Certifications from "./components/Certifications";
 import Footer from "./components/Footer";
 import LanguageToggle from "./components/LanguageToggle";
+import DownloadPDF from "./components/DownloadPDF";
 import { LanguageProvider } from "./context/LanguageContext";
 import { VoiceoverProvider } from "./context/VoiceoverContext";
 
@@ -24,6 +25,7 @@ export default function App() {
       <VoiceoverProvider>
         <main className="bg-neutral-950 min-h-screen text-white font-sans selection:bg-blue-500/30">
           <LanguageToggle />
+          <DownloadPDF />
           <Hero />
           <About />
           <Skills />
