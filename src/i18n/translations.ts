@@ -98,8 +98,8 @@ export const translations = {
       contact: 'Kontakt aufnehmen',
       stats: {
         experience: 'Jahre Erfahrung',
-        projects: 'Projekte Geliefert',
-        tools: 'KI-Tools Gemeistert',
+        projects: 'Gelieferte Projekte',
+        tools: 'Beherrschte KI-Tools',
         certifications: 'Zertifizierungen'
       }
     },
@@ -110,8 +110,8 @@ export const translations = {
       aiTools: 'KI-Bild- und Videotools',
       aiToolsDescription: 'Beherrschung der neuesten generativen KI-Tools zur Erstellung unmöglicher Visualisierungen.',
       coreSkills: 'Kernkompetenzen',
-      coreSkillsDescription: 'Branchenübliche Software und spezialisierte Designfähigkeiten.',
-      mastered: 'Gemeistert'
+      coreSkillsDescription: 'Industriestandard-Software und spezialisierte Designfähigkeiten.',
+      mastered: 'Beherrscht'
     },
     experience: {
       title: 'Erfahrung',
